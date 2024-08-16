@@ -1,61 +1,78 @@
+.home-container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: 'Cinzel', serif;
+}
+
+.banner-container {
+  position: relative;
+}
+
+.home-banner {
+  width: 80%; /* Ajuste a largura conforme necessário, pode ser em pixels, porcentagens, etc. */
+  max-width: 700px; /* Limita a largura máxima para evitar que fique muito grande em telas grandes */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Garante que a imagem cubra o container */
+  display: block; /* Remove espaços indesejados abaixo da imagem */
+  top: 0; /* Alinha ao topo do contêiner */
+  left: 10; /* Alinha à esquerda do contêiner */
+  margin: 0; /* Remove margens padrão */
+}
+
+
+.text-overlay {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  color: rgb(41, 11, 126);
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  z-index: 1;
+}
+
+.text-overlay h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.text-overlay p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.product-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e0f7fa;
+  color: rgb(41, 11, 126);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.product-button:hover {
+  background-color: #e0f7fa;
+}
+
+.products-container {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.products-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
 .image {
-    width: var(--image-width, 50%); /* Largura padrão é 50% */
+    width: var(--image-width, 10%); /* Largura padrão é 50% */
     height: var(--image-height, auto); /* Altura padrão é auto para manter a proporção */
     object-fit: cover; /* Ajusta a imagem para cobrir o container */
     border-radius: 0.5rem; /* Raio da borda para bordas arredondadas */
     position: relative; /* Para usar posicionamento absoluto se necessário */
     margin-top: -250px;
   }
-  
-  /* Posicionamento da imagem */
-  .image-left {
-    margin-right: auto; /* Move a imagem para a esquerda */
-  }
-  
-  .image-right {
-    margin-left: auto; /* Move a imagem para a direita */
-  }
-  
-  .image-top {
-    position: absolute; /* Permite o posicionamento absoluto */
-    top: 0; /* Move a imagem para o topo do container */
-    left: 50%; /* Alinha a imagem ao centro horizontalmente */
-    transform: translateX(-50%); /* Centraliza horizontalmente */
-  }
-  
-  .image-bottom {
-    position: absolute; /* Permite o posicionamento absoluto */
-    bottom: 0; /* Move a imagem para a parte inferior do container */
-    left: 50%; /* Alinha a imagem ao centro horizontalmente */
-    transform: translateX(-50%); /* Centraliza horizontalmente */
-  }
- 
-  /* Estilos para o texto */
-  .text-right {
-    text-align: right; /* Alinha o texto à direita */
-    justify-content: space-between;
-    margin-top: 100px;
-  }
-  
-  .text-large {
-    font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
-    font-weight: bold; /* Torna o texto mais grosso */
-    color:rgb(41, 11, 126);
-}
 
-/* Estilos do botão */
-.button-primary {
-  background-color: rgb(41, 11, 126); /* Cor de fundo do botão */
-  color: white; /* Cor do texto do botão */
-  padding: 0.75rem 1.5rem; /* Espaçamento interno */
-  border-radius: 0.5rem; /* Bordas arredondadas */
-  font-weight: 600; /* Peso da fonte */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-  transition: all 0.3s ease; /* Transição suave para efeitos */
-}
-
-.button-primary:hover {
-  background-color: #1d4ed8; /* Cor de fundo ao passar o mouse */
-  color: #ffffff; /* Cor do texto ao passar o mouse */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
-}
+  

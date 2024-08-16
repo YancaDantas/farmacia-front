@@ -1,43 +1,27 @@
-/* Define o estilo do footer */
 .footer {
-  width: 100%;
-  background-color: #e0f7fa; /* cor de fundo azul escuro */
-  color: rgb(41, 11, 126);/* cor do texto */
-  padding: 1rem 0; /* padding vertical */
-  text-align: center; /* alinha o texto no centro */
+  background-color: #e0f7fa;
+  padding: 20px;
+  text-align: center;
+  color: rgb(41, 11, 126);
+  margin-top: auto;
 }
 
-.footer .container {
-  max-width: 1200px; /* largura máxima do container */
-  margin: 0 auto; /* centraliza o container horizontalmente */
-  padding: 0 1rem; /* padding horizontal */
-  display: flex;
-  flex-direction: column; /* alinha os itens na vertical */
-  align-items: center; /* alinha os itens no centro */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.footer .text {
-  font-size: 1.25rem; /* tamanho da fonte para o texto */
-  font-weight: bold; /* peso da fonte */
+.footer-content p {
+  margin: 5px 0;
 }
 
-.footer .subtext {
-  font-size: 1.125rem; /* tamanho da fonte para o texto secundário */
-  margin-top: 0.5rem; /* margem superior */
+.footer-content a {
+  color: rgb(41, 11, 126);
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
 }
 
-/* Estilo para o ícone ou links, se houver */
-.footer .social-links {
-  margin-top: 1rem; /* margem superior */
-  display: flex;
-  gap: 0.5rem; /* espaço entre os ícones ou links */
-}
-
-.footer .social-links a {
-  color: #ffffff; /* cor dos ícones ou links */
-  transition: color 0.3s ease; /* transição suave para a cor */
-}
-
-.footer .social-links a:hover {
-  color: #cbd5e1; /* cor dos ícones ou links ao passar o cursor */
+.footer-content a:hover {
+  text-decoration: underline;
 }

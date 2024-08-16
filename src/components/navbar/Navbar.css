@@ -1,17 +1,19 @@
 .navbar {
-    width: 100%;
-    background-color: #e0f7fa; /* cor de fundo azul clarinho */
-    color: rgb(41, 11, 126); /* cor do texto */
-    padding: 1rem 0; /* padding vertical */
-  }
+  background-color: #e0f7fa;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
   
   .navbar-container {
     max-width: 1200px; /* ajuste conforme necessário */
-    margin: 0 auto; /* centraliza o container */
+    margin: 10; /* centraliza o container */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem; /* padding horizontal */
+    width: 100%;
   }
   
   .navbar-title-container {
@@ -29,12 +31,9 @@
     font-size: 1.5rem; /* ajuste conforme necessário */
     font-weight: bold;
     text-transform: uppercase;
+    color: rgb(41, 11, 126);
   }
   
-  .navbar-menu {
-    display: flex;
-    gap: 1rem; /* espaço entre itens do menu */
-  }
   
   .navbar-item {
     cursor: pointer;
@@ -50,4 +49,21 @@
     text-decoration: underline; /* sublinha o texto ao passar o cursor */
     border-color: rgb(41, 11, 126); /* cor da borda ao passar o cursor */
   }
-  
+
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: rgb(41, 11, 126);
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}

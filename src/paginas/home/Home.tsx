@@ -1,24 +1,27 @@
 import React from 'react';
-import './Home.css'; // Importe o CSS do componente
-import imagem from './../../assets/farmaceutica.jpg';
+import './Home.css';
+import home from './../../assets/farmaceutica.jpg';
 
-function Home() {
+const Home: React.FC = () => {
   return (
-    <div className="bg-blue-600 flex justify-center py-12">
-      <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 text-white max-w-5xl mx-auto px-4 relative">
-        {/* Texto à direita */}
-        <div className="flex flex-col gap-6 items-start justify-center py-4 text-right text-large">
-          <h2 className="text-5xl md:text-6xl font-extrabold">Seja bem-vindo!</h2>
-          <p className="text-lg md:text-xl">Uma farmácia na palma da sua mão!</p>
-          <p className="text-lg md:text-xl">Seu remédio em um click.</p>
-          <div className="flex justify-start">
-            <button className="button-primary">Ver produtos</button>
-          </div>
+    <div className="home-container">
+      {/* Adicionando a imagem entre o Navbar e o conteúdo principal */}
+      <div className="banner-container">
+        <img 
+          src={home}
+          alt="Banner"
+          className="home-banner"
+        />
+        <div className="text-overlay">
+          <h1>Seja bem vindo!</h1>
+          <p>A  melhor farmácia na palma da sua mão!</p>
+          <button className="product-button" onClick={() => document.getElementById('products-section')?.scrollIntoView({ behavior: 'smooth' })}>
+            Ver Produtos
+          </button>
         </div>
-        {/* Imagem à esquerda */}
-        <div className="flex justify-center items-center">
-          <img src={imagem} alt="Imagem da farmácia" className="image image-left" />
-        </div>
+      </div>
+      <div id="products-section" className="products-container">
+        <h2>Todos Produtos</h2>
       </div>
     </div>
   );

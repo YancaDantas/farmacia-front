@@ -1,0 +1,38 @@
+.produto-container {
+    padding: 40px;
+    text-align: center;
+    font-size: 30px;
+    min-height: calc(100vh - 160px);
+  }
+  
+  .produto-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .produto-item {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 200px;
+    flex: 1 1 200px;
+    box-sizing: border-box;
+  }
+  
+  .produto-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color: #e0f7fa;
+    color: rgb(41, 11, 126);
+    text-align: center;
+    width: 100%;
+  }
+  
