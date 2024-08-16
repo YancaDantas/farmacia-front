@@ -1,0 +1,53 @@
+.navbar {
+    width: 100%;
+    background-color: #e0f7fa; /* cor de fundo azul clarinho */
+    color: rgb(41, 11, 126); /* cor do texto */
+    padding: 1rem 0; /* padding vertical */
+  }
+  
+  .navbar-container {
+    max-width: 1200px; /* ajuste conforme necessário */
+    margin: 0 auto; /* centraliza o container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem; /* padding horizontal */
+  }
+  
+  .navbar-title-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    width: 40px; /* ajuste o tamanho conforme necessário */
+    height: 40px; /* ajuste o tamanho conforme necessário */
+    margin-right: 1rem; /* espaço entre a imagem e o título */
+  }
+  
+  .navbar-title {
+    font-size: 1.5rem; /* ajuste conforme necessário */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    gap: 1rem; /* espaço entre itens do menu */
+  }
+  
+  .navbar-item {
+    cursor: pointer;
+    font-size: 1.2rem; /* aumenta o tamanho da fonte */
+    font-weight: bold; /* aumenta o peso da fonte */
+    transition: color 0.3s ease, border-color 0.3s ease; /* transição suave para a cor e borda */
+    border: 2px solid transparent; /* borda inicial invisível */
+    border-radius: 12px; /* borda arredondada */
+    padding: 0.5rem 1rem; /* espaço interno para a borda */
+  }
+  
+  .navbar-item:hover {
+    text-decoration: underline; /* sublinha o texto ao passar o cursor */
+    border-color: rgb(41, 11, 126); /* cor da borda ao passar o cursor */
+  }
+  
